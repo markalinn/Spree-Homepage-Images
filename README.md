@@ -1,21 +1,11 @@
-SpreeHomepageImages
+Spree Homepage Images
 ===================
 
-Introduction goes here.
+Spree Homepage Images adds an administration screen to upload and order images as well as adding a homepage onto the site that cycles through images using the nivo-slider (http://nivo.dev7studios.com/).  Since Home has now changed an additional menu item next to the default home is added for 'Products' to allow navigating to the products section or back to home.
+
+This extension was designed with Spree 1.0 so not currently backward compatible.
 
 
-Example
-=======
-
-Example goes here.
-
-Testing
--------
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-    $ bundle
-    $ bundle exec rake test app
-    $ bundle exec rspec spec
-
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+Installation
+===================
+Standard spree extension install method.
