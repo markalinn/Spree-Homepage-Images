@@ -3,12 +3,12 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_homepage_images'
   s.version     = '1.0.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Homepage image admin and nivo-slider homepage replacement'
+  s.description = 'Homepage image admin and nivo-slider homepage replacement'
   s.required_ruby_version = '>= 1.8.7'
 
-  # s.author            = 'You'
-  # s.email             = 'you@example.com'
+  s.author            = 'Mark Linn'
+  s.email             = 'marklinn@xwcsolutions.com'
   # s.homepage          = 'http://www.spreecommerce.com'
 
   #s.files         = `git ls-files`.split("\n")
