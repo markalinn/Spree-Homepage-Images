@@ -2,14 +2,16 @@
 <div class="rotatingBanner">
         <div class="slider-wrapper theme-spree">
             <div id="slider" class="nivoSlider">
+            <% if @homepage_images %>
             	<% @homepage_images.each do |homepage_image| %>
             		<%= link_to(image_tag(homepage_image.attachment.url(:standard), :alt => ''),homepage_image.destination_url) %>
             	<% end %>
+            <% end %>
             </div>
         </div>
 </div>
 
-<%= javascript_include_tag 'jquery.nivo.slider.pack.js' %>
+<%#= javascript_include_tag 'store/jquery.nivo.slider.pack.js' %>
 <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
