@@ -15,7 +15,7 @@
 		<% @homepage_banners.each do |homepage_banner| %>
 			<div style="float:left;">
 			<%= link_to(image_tag(homepage_banner.attachment.url(:standard), :alt => homepage_banner.alt),homepage_banner.destination_url) %><br/>
-			<%= homepage_banner.alt %></div>
+			<%= homepage_banner.alt.upcase %></div>
 		<% end %>
 	<% end %>
 </div>
