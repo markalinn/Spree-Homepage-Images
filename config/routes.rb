@@ -6,6 +6,11 @@ Spree::Core::Engine.routes.draw do
         post :update_positions
       end
     end
+    resources :homepage_banners do
+      collection do
+        post :update_positions
+      end
+    end
   end
   root :controller => "home_page", :action => "index"
 end

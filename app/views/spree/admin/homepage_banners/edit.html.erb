@@ -1,0 +1,13 @@
+<%= form_for(:homepage_banner, :url => admin_homepage_banner_url, :html => { :method => :put, :multipart => true }) do |f| %>
+  <table class="basic-table">
+    <tr>
+      <td><%= t("thumbnail") %>:</td>
+      <td><%= link_to(image_tag(@homepage_banner.attachment.url(:small)), @homepage_banner.attachment.url(:standard)) %></td>
+    </tr>
+    <%= render :partial => "form", :locals => { :f => f } %>
+  </table>
+  <p class="form-buttons">
+    <%= button t("update") %>
+    <%= t('or') %> <%= link_to t("cancel"), admin_homepage_banners_url, :id => "cancel_link" %>
+  </p>
+<% end %>
