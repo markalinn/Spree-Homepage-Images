@@ -2,7 +2,7 @@ module Spree
   class HomepageBanner < Asset
     validate :no_attachement_errors
     has_attached_file :attachment,
-                      :styles => { :small => '100x100>', :standard => '300x600>' },
+                      :styles => { :small => '100x100>', :standard => '309x627>' },
                       :default_style => :standard,
                       :url => "/assets/homepage/:id/:style/:basename.:extension",
                       :path => ":rails_root/public/assets/homepage/:id/:style/:basename.:extension"
