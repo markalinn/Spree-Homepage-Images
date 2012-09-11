@@ -10,6 +10,8 @@ module Spree
     # save the w,h of the original image (from which others can be calculated)
     # we need to look at the write-queue for images which have not been saved yet
     after_post_process :find_dimensions
+
+    attr_accessible :attachment, :destination_url, :alt
   
     def find_dimensions
       temporary = attachment.queued_for_write[:original]
