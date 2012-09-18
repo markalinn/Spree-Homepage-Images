@@ -4,8 +4,8 @@ module Spree
     has_attached_file :attachment,
                       :styles => { :small => '100x100>', :standard => '309x627>' },
                       :default_style => :standard,
-                      :url => "/assets/homepage/:id/:style/:basename.:extension",
-                      :path => ":rails_root/public/assets/homepage/:id/:style/:basename.:extension"
+                      :url => "/assets/homepage_banner/:id/:style/:basename.:extension",
+                      :path => ":rails_root/public/assets/homepage_banner/:id/:style/:basename.:extension"
     validates_attachment_presence :attachment 
     # save the w,h of the original image (from which others can be calculated)
     # we need to look at the write-queue for images which have not been saved yet
