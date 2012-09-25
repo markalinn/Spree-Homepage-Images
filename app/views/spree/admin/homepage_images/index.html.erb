@@ -16,7 +16,7 @@
   </tr>
 
   <% @homepage_images.each do |image| %>
-    <tr id="<%= dom_id(image) %>">
+    <tr id="<%= spree_dom_id image %>">
       <td>
         <span class="handle"></span>
         <%= link_to(image_tag(image.attachment.url(:small)), image.attachment.url(:standard)) %>
